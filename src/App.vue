@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <MyInput />
+    <MyInput error/>
+    <MyInput disabled/>
+    <MyInput helpText="some interesting text"/>
+    <MyInput helpText="some interesting text" error/>
+    <MyInput startIcon />
+    <MyInput endIcon />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyInput from './components/MyInput.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyInput
   }
 }
 </script>
